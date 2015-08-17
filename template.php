@@ -346,10 +346,11 @@ isset($arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && $arRe
                     </div>
                     <div class="block delivery">
                         <p class="title">Доставка</p>
-                        <a href="/dostavka/"><img src="<?=SITE_TEMPLATE_PATH?>/images/info_block/ukr.png" /></a>
                         <a href="/dostavka/"><img src="<?=SITE_TEMPLATE_PATH?>/images/info_block/np.png" /></a>
+                        <a href="/dostavka/"><img src="<?=SITE_TEMPLATE_PATH?>/images/info_block/ukr.png" /></a>
 
-                        <span>Заказы, оплаченные<br> до 15-00, отправляются в тот же день</span>
+
+                        <span><br>Заказы, оплаченные<br> до 15-00, отправляются <br>в тот же день</span>
                     </div>
                 </div>
                 <div id=rightcol>
