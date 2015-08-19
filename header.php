@@ -146,8 +146,6 @@
 			<li class="filter-4 ">
 				<a href="/catalog/feminised.php?q=микс&how=r">Миксы</a>
 			</li>
-			<li class="last">
-				<a href="/catalog/feminised.php?">Под заказ</a>
-			</li>
+
 		</ul> 
 	</div>
