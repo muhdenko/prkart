@@ -745,7 +745,7 @@ tr.summary-details-excluded { font-style:italic; }
 #nav li, #predefinedfilter li {
     float:left;
     overflow: hidden;
-    width: 171px;
+    width: 146px;
     height: 46px;
     vertical-align: middle;
 }
@@ -763,7 +763,7 @@ tr.summary-details-excluded { font-style:italic; }
     color: #fff !important;
 }
 #predefinedfilter li.last {
-    width: 167px;
+    width: 146px;
     border-right: 1px solid #3d5e22;
 }
 
