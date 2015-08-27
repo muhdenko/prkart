@@ -5,7 +5,7 @@ IncludeTemplateLangFile(__FILE__);
 <?$APPLICATION->ShowHead();?>
 <title><?$APPLICATION->ShowTitle();?></title>
 <link rel="icon" href="/bitrix/templates/.default/images/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="/bitrix/templates/.default/images/favicon.ico" type="image/x-icon" />           
+<link rel="shortcut icon" href="/bitrix/templates/.default/images/favicon.ico" type="image/x-icon" />
 <!--[if lt IE 7]>
 <script type="text/javascript">
 //<![CDATA[
@@ -94,30 +94,17 @@ optionalZipCountries = ["AU","AT","AZ","AX","AL","DZ","VI","AS","AO","AI","AD","
 	var currentHandle = 'cms_index_index'
 	</script>-->
 	<div class="wrapper">
-    
+
 <?include_once($_SERVER['DOCUMENT_ROOT']."/bitrix/templates/.default/include/header.php");?>
-		<div class="main-container col1-layout">
+<div class="main-container col1-layout">
 	<div class="main">
 		<div class="col-main">
-			<div class="homepage-banners">
-				<div class="carousel banner">
-					<div class="carousel-inner">
-						<div class="item active">
-							<img title="На главной странице" src="/bitrix/templates/.default/images/banner_1.jpg" data-banner="1" height="240px" width="1021px">            
-						</div>
-						<div class="item">
-							<a href="http://canna-seeds.com.ua/"><img title="1234" src="/bitrix/templates/.default/images/banner_rzr_steel.jpg" data-banner="2" height="240px" width="1021px"></a>            
-						</div>
-					</div>
-					<div class="carousel-pager"><a class="active"></a><a class=""></a></div>
-					<div class="clear"></div>
-				</div>
-			</div>
+
 			<script type="text/javascript">
 // 				jQuery(function() {
 // 				   jQuery('.carousel').carousel({
 // 					  interval: 5000
-// 					}); 
+// 					});
 // 				});
 			</script>
 
@@ -134,6 +121,117 @@ optionalZipCountries = ["AU","AT","AZ","AX","AL","DZ","VI","AS","AO","AI","AD","
 					);?>
 				</div>
 				<div class="brands-containter">
+<?$APPLICATION->IncludeComponent(
+	"bitrix:sale.bestsellers",
+	"template4",
+	array(
+		"LINE_ELEMENT_COUNT" => "4",
+		"TEMPLATE_THEME" => "site",
+		"BY" => "AMOUNT",
+		"PERIOD" => "0",
+		"FILTER" => array(
+			0 => "CANCELED",
+			1 => "ALLOW_DELIVERY",
+			2 => "PAYED",
+			3 => "DEDUCTED",
+			4 => "N",
+			5 => "P",
+			6 => "F",
+		),
+		"CACHE_TYPE" => "N",
+		"CACHE_TIME" => "86400",
+		"AJAX_MODE" => "N",
+		"DETAIL_URL" => "",
+		"BASKET_URL" => "/personal/basket.php",
+		"ACTION_VARIABLE" => "action",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"ADD_PROPERTIES_TO_BASKET" => "Y",
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N",
+		"DISPLAY_COMPARE" => "N",
+		"SHOW_OLD_PRICE" => "N",
+		"SHOW_DISCOUNT_PERCENT" => "N",
+		"PRICE_CODE" => array(
+			0 => "BASE",
+		),
+		"SHOW_PRICE_COUNT" => "1",
+		"PRODUCT_SUBSCRIPTION" => "N",
+		"PRICE_VAT_INCLUDE" => "Y",
+		"USE_PRODUCT_QUANTITY" => "N",
+		"SHOW_NAME" => "Y",
+		"SHOW_IMAGE" => "Y",
+		"MESS_BTN_BUY" => "",
+		"MESS_BTN_DETAIL" => "",
+		"MESS_NOT_AVAILABLE" => "Нет в наличии",
+		"MESS_BTN_SUBSCRIBE" => "Подписаться",
+		"PAGE_ELEMENT_COUNT" => "4",
+		"SHOW_PRODUCTS_3" => "Y",
+		"PROPERTY_CODE_3" => array(
+			0 => "",
+			1 => "MANUFACTURER",
+			2 => "MATERIAL",
+			3 => "",
+		),
+		"CART_PROPERTIES_3" => array(
+			0 => "",
+			1 => "CORNER",
+			2 => "",
+		),
+		"ADDITIONAL_PICT_PROP_3" => "MORE_PHOTO",
+		"LABEL_PROP_3" => "SPECIALOFFER",
+		"PROPERTY_CODE_4" => array(
+			0 => "",
+			1 => "COLOR",
+			2 => "",
+		),
+		"CART_PROPERTIES_4" => array(
+			0 => "",
+			1 => "",
+		),
+		"OFFER_TREE_PROPS_4" => array(
+			0 => "-",
+		),
+		"HIDE_NOT_AVAILABLE" => "N",
+		"CONVERT_CURRENCY" => "Y",
+		"CURRENCY_ID" => "RUB",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"SHOW_PRODUCTS_2" => "N",
+		"SHOW_PRODUCTS_4" => "Y",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"PROPERTY_CODE_2" => array(
+			0 => "",
+			1 => "",
+		),
+		"CART_PROPERTIES_2" => array(
+			0 => "",
+			1 => "",
+		),
+		"ADDITIONAL_PICT_PROP_2" => "MORE_PHOTO",
+		"LABEL_PROP_2" => "-",
+		"OFFER_TREE_PROPS_3" => array(
+			0 => "-",
+		),
+		"ADDITIONAL_PICT_PROP_4" => "MORE_PHOTO",
+		"LABEL_PROP_4" => "-",
+		"PROPERTY_CODE_5" => array(
+			0 => "",
+			1 => "",
+		),
+		"CART_PROPERTIES_5" => array(
+			0 => "",
+			1 => "",
+		),
+		"ADDITIONAL_PICT_PROP_5" => "MORE_PHOTO",
+		"OFFER_TREE_PROPS_5" => array(
+			0 => "-",
+		)
+	),
+	false
+);?>
+<!--
 					<div style="position: relative; display: block;" class="jcarousel-container jcarousel-container-horizontal"><div style="position: relative;" class="jcarousel-clip jcarousel-clip-horizontal"><ul style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px; left: 0px; width: 670px;" class="jcarousel-list jcarousel-list-horizontal" id="brands-carousel">
 												<li jcarouselindex="1" style="float: left; list-style: outside none none;" class="newproduct-container promotion jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal">
 							<a title="Barney's Farm" href="http://can.sysint.net/brands/show/me/b/2/">
@@ -166,13 +264,18 @@ optionalZipCountries = ["AU","AT","AZ","AX","AL","DZ","VI","AS","AO","AI","AD","
 							</a>
 						</li>
 							</ul></div><div disabled="disabled" style="display: block;" class="jcarousel-prev jcarousel-prev-horizontal jcarousel-prev-disabled jcarousel-prev-disabled-horizontal"></div><div disabled="disabled" style="display: block;" class="jcarousel-next jcarousel-next-horizontal jcarousel-next-disabled jcarousel-next-disabled-horizontal"></div></div>
-				</div>
+				</div>-->
 			</div>
 
+<script>
+    jQuery(function() {
+
+    });
+</script>
 <div class="page-home-promotions-wp">
     <div class="promotions-title">
-		<a href="/discounts/">Акции и скидки</a>    </div>
-    
+        Акции и скидки    </div>
+
     <ul class="promotions-list">
                 <li class="p-item">
             <div class="ribbon">
@@ -261,6 +364,7 @@ optionalZipCountries = ["AU","AT","AZ","AX","AL","DZ","VI","AS","AO","AI","AD","
         </li>
             </ul>
 </div>
+
 <div class="std">&nbsp;</div><div class="news-wrap">
         <?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
@@ -315,11 +419,7 @@ optionalZipCountries = ["AU","AT","AZ","AX","AL","DZ","VI","AS","AO","AI","AD","
 	)
 );?>
         </div>
-<script>
-    jQuery(function() {
-        
-    });
-</script>
+
                 </div>
             </div>
         </div>

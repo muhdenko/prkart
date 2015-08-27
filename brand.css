@@ -29,9 +29,8 @@
     padding: 7px 0px;
 }
 .brands-containter {
-    background: url(/images/background/brand/brand_container.png) transparent no-repeat center center;
     width: 100%;
-    height: 98px;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
