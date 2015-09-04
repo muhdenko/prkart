@@ -1510,10 +1510,12 @@ button.btn-approve {
     overflow: visible;
 }
 .pduct-sku {
-    color: #fff;
+    color: #fff000;
+    font-weight: bolder;
 }
 .product-stock {
-    color: #fff;
+    color: #fff000;
+    font-weight: bolder;
     border-bottom: 1px solid;
 }
 
@@ -2263,8 +2265,13 @@ button.btn-approve {
 .bottom-contacts ul, .top-contacts ul {
     margin: 10px 0px;
 }
-.bottom-contacts ul li, .top-contacts ul li {
+.bottom-contacts ul li,{
     color: #fff;
+    font-size: 15px;
+    padding-left: 22px;
+}
+.top-contacts ul li {
+    color: #0e6012;
     font-size: 15px;
     padding-left: 22px;
 }
@@ -2403,6 +2410,7 @@ button.btn-approve {
 }
 .news-container .news-wp {
     width: 300px;
+    text-align: left;
 }
 
 .news-container .news-date {
